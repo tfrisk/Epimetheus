@@ -4,6 +4,8 @@ import React, { Fragment, useEffect } from 'react';
 import { css, jsx } from '@emotion/core';
 import Filter from '../components/historyTable/Filter';
 import Table from '../components/historyTable/Table';
+import Xor from '../components/historyTable/WindowTable';
+import VirtualizedTable from '../components/historyTable/VirtualizedTable';
 import ParentSeries from '../components/parentData/ParentSeries';
 import Checkbox from '../components/Checkbox';
 import { useStateValue } from '../contexts/state';
@@ -106,7 +108,9 @@ const History = () => {
                     >
                         Content loaded.
                     </div>
+                    <Xor />
                     <Table />
+                    {/* <VirtualizedTable /> */}
                 </Fragment>
             )}
         </main>

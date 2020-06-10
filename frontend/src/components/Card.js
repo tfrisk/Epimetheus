@@ -25,7 +25,7 @@ const Card = ({ team, numberOfSeries }) => {
 
         @media only screen and (min-width: 1024px) {
             width: 400px;
-            height: 200px;
+            height: 20 0px;
         }
     `;
 

@@ -31,6 +31,7 @@ const Build = () => {
     let { buildId, seriesId } = useParams();
 
     const branch_id = seriesId || selectedBranchState;
+    console.log('branch_id on', branch_id);
 
     useEffect(() => {
         const fetchData = async () => {
